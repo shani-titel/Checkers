@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CheckersDatabase" Class="CheckersDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\CheckersDatabase.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="CheckersProject.Properties.Settings" SettingsPropertyName="CheckersDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Groups" Member="Groups">
+    <Type Name="Group">
+      <Column Name="group_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="group_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Group_PlayersInGroup" Member="PlayersInGroups" ThisKey="group_ID" OtherKey="playerInGroup_GroupID" Type="PlayersInGroup" />
+      <Association Name="Group_SidesInGame" Member="SidesInGames" ThisKey="group_ID" OtherKey="side_GroupId" Type="SidesInGame" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlayersInGroup" Member="PlayersInGroups">
+    <Type Name="PlayersInGroup">
+      <Column Name="playerInGroup_GroupID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="playerInGroup_PlayerID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Group_PlayersInGroup" Member="Group" ThisKey="playerInGroup_GroupID" OtherKey="group_ID" Type="Group" IsForeignKey="true" />
+      <Association Name="Player_PlayersInGroup" Member="Player" ThisKey="playerInGroup_PlayerID" OtherKey="player_ID" Type="Player" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SidesInGame" Member="SidesInGames">
+    <Type Name="SidesInGame">
+      <Column Name="side_GameID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="side_GroupId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="side_PlayerId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Group_SidesInGame" Member="Group" ThisKey="side_GroupId" OtherKey="group_ID" Type="Group" IsForeignKey="true" />
+      <Association Name="Player_SidesInGame" Member="Player" ThisKey="side_PlayerId" OtherKey="player_ID" Type="Player" IsForeignKey="true" />
+      <Association Name="Game_SidesInGame" Member="Game" ThisKey="side_GameID" OtherKey="game_ID" Type="Game" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Players" Member="Players">
+    <Type Name="Player">
+      <Column Name="player_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="player_FirstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="player_LastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="player_CellNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="player_City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="player_Street" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="player_HouseNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="player_Reg_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="player_Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="player_Wins" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Player_PlayersInGroup" Member="PlayersInGroups" ThisKey="player_ID" OtherKey="playerInGroup_PlayerID" Type="PlayersInGroup" />
+      <Association Name="Player_SidesInGame" Member="SidesInGames" ThisKey="player_ID" OtherKey="side_PlayerId" Type="SidesInGame" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Games" Member="Games">
+    <Type Name="Game">
+      <Column Name="game_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="game_BoardSize" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="game_Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="game_IsSinglePlayer" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="game_IsSmartComputer" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Game_SidesInGame" Member="SidesInGames" ThisKey="game_ID" OtherKey="side_GameID" Type="SidesInGame" />
+      <Association Name="Game_MovesInGame" Member="MovesInGames" ThisKey="game_ID" OtherKey="move_GameID" Type="MovesInGame" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MovesInGame" Member="MovesInGames">
+    <Type Name="MovesInGame">
+      <Column Name="move_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="move_GameID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="move_SideID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_Origin_I" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_Origin_J" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_Target_I" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_Target_J" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_Eaten_I" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="move_Eaten_J" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="move_IsFaded" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="move_IsDragMode" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="move_P1_PawnShape" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="move_P1_IsShapeFilled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="move_P1_PawnColor_R" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_P1_PawnColor_G" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_P1_PawnColor_B" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_P2_PawnShape" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="move_P2_IsShapeFilled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="move_P2_PawnColor_R" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_P2_PawnColor_G" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="move_P2_PawnColor_B" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Game_MovesInGame" Member="Game" ThisKey="move_GameID" OtherKey="game_ID" Type="Game" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

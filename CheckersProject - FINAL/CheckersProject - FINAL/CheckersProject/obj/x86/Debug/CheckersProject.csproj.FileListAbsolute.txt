@@ -1,0 +1,47 @@
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\bin\Debug\CheckersProject.exe.config
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\bin\Debug\CheckersDatabase.mdf
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\bin\Debug\CheckersDatabase_log.ldf
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\bin\Debug\CheckersProject.exe
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\bin\Debug\CheckersProject.pdb
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.AboutBox.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.ChooseGameForReplay.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.ChoosePlayers.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.GameSettings.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.InsertDataBox.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.GameBoard.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.MainWindow.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.Properties.Resources.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.RegisterGroups.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.RegisterPlayers.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.SelectBoardSize.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.StatisticsView.resources
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.exe
+C:\Users\computer\Desktop\CheckersProject-beginning replay\CheckersProject\obj\x86\Debug\CheckersProject.pdb
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\bin\Debug\CheckersProject.exe.config
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.exe
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.pdb
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\bin\Debug\CheckersDatabase.mdf
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\bin\Debug\CheckersDatabase_log.ldf
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\bin\Debug\CheckersProject.exe
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\bin\Debug\CheckersProject.pdb
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.AboutBox.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.ChooseGameForReplay.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.ChoosePlayers.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.GameSettings.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.InsertDataBox.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.GameBoard.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.MainWindow.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.Properties.Resources.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.RegisterGroups.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.RegisterPlayers.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.SelectBoardSize.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\CheckersProject.StatisticsView.resources
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\computer\Desktop\CheckersProject - no computer fade\CheckersProject\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Nicki\Desktop\CheckersProject - FINAL\CheckersProject - FINAL\CheckersProject\bin\Debug\CheckersProject.exe.config
+C:\Users\Nicki\Desktop\CheckersProject - FINAL\CheckersProject - FINAL\CheckersProject\obj\x86\Debug\CheckersProject.exe
+C:\Users\Nicki\Desktop\CheckersProject - FINAL\CheckersProject - FINAL\CheckersProject\obj\x86\Debug\CheckersProject.pdb

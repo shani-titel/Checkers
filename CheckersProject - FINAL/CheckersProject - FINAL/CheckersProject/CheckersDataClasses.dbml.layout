@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.75" name="CheckersDataClasses">
+  <DataContextMoniker Name="/CheckersDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4d3433ed-8945-47f4-b772-92ec9c3860ed" absoluteBounds="0.5, 0.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/CheckersDataClassesDataContext/Group" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0ecc54f-8549-4aed-a586-f4b634af9911" absoluteBounds="0.515, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34cd6a9f-65db-4ee9-a6c8-5269f630dded" absoluteBounds="3.5, 0.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/CheckersDataClassesDataContext/PlayersInGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a36fd2f2-128a-4c9b-af40-020707b98ad5" absoluteBounds="3.515, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.09699625651042); (3.5 : 1.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CheckersDataClassesDataContext/Group/Group_PlayersInGroup" />
+      <nodes>
+        <classShapeMoniker Id="4d3433ed-8945-47f4-b772-92ec9c3860ed" />
+        <classShapeMoniker Id="34cd6a9f-65db-4ee9-a6c8-5269f630dded" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ed625f52-7b19-47fb-bb05-54188e32f26b" absoluteBounds="4, 5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/CheckersDataClassesDataContext/SidesInGame" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db6de331-5eac-492f-862b-2fe34f1076da" absoluteBounds="4.015, 5.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.69399251302083); (2.875 : 2.06899251302083); (2.875 : 4.625); (3.625 : 4.625); (4 : 5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CheckersDataClassesDataContext/Group/Group_SidesInGame" />
+      <nodes>
+        <classShapeMoniker Id="4d3433ed-8945-47f4-b772-92ec9c3860ed" />
+        <classShapeMoniker Id="ed625f52-7b19-47fb-bb05-54188e32f26b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7437fba8-2281-4dd6-b147-2328794cbf23" absoluteBounds="0.5, 2.125, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/CheckersDataClassesDataContext/Player" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3be32f9c-dfb5-4431-b0d0-1a422fe2b0a1" absoluteBounds="0.51500000000000012, 2.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.53125); (2.79166666666667 : 2.53125 : JumpStart); (2.95833333333333 : 2.53125 : JumpEnd); (4.09375 : 2.53125); (4.09375 : 1.69399251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CheckersDataClassesDataContext/Player/Player_PlayersInGroup" />
+      <nodes>
+        <classShapeMoniker Id="7437fba8-2281-4dd6-b147-2328794cbf23" />
+        <classShapeMoniker Id="34cd6a9f-65db-4ee9-a6c8-5269f630dded" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 2.7656275); (2.79166666666667 : 2.7656275 : JumpStart); (2.95833333333333 : 2.7656275 : JumpEnd); (4.390625 : 2.7656275); (4.390625 : 5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CheckersDataClassesDataContext/Player/Player_SidesInGame" />
+      <nodes>
+        <classShapeMoniker Id="7437fba8-2281-4dd6-b147-2328794cbf23" />
+        <classShapeMoniker Id="ed625f52-7b19-47fb-bb05-54188e32f26b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="34f17f26-d4fe-4760-ab82-4c446a03e744" absoluteBounds="4.75, 3, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CheckersDataClassesDataContext/Game" />
+      <nestedChildShapes>
+        <elementListCompartment Id="455b9dd6-8103-4639-b785-34383cadcb7e" absoluteBounds="4.765, 3.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.375 : 4.77089680989583); (5.375 : 5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CheckersDataClassesDataContext/Game/Game_SidesInGame" />
+      <nodes>
+        <classShapeMoniker Id="34f17f26-d4fe-4760-ab82-4c446a03e744" />
+        <classShapeMoniker Id="ed625f52-7b19-47fb-bb05-54188e32f26b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e125912e-a517-48de-8934-cd9fcb2f1677" absoluteBounds="1.5, 5.625, 2, 4.8477197265625">
+      <DataClassMoniker Name="/CheckersDataClassesDataContext/MovesInGame" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b9d0699-ad2c-47b8-8fa6-6a68f60f2148" absoluteBounds="1.5150000000000001, 6.085, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.40625 : 4.77089680989583); (6.40625 : 8.4607568359375); (3.5 : 8.4607568359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CheckersDataClassesDataContext/Game/Game_MovesInGame" />
+      <nodes>
+        <classShapeMoniker Id="34f17f26-d4fe-4760-ab82-4c446a03e744" />
+        <classShapeMoniker Id="e125912e-a517-48de-8934-cd9fcb2f1677" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
